@@ -1,0 +1,582 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-10-24 16:15+0100\n"
+"PO-Revision-Date: 2014-10-24 12:03-0500\n"
+"Last-Translator: \n"
+"Language-Team:  <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.6.10\n"
+"Language: fr_CA\n"
+
+#: Controller/CreatorsController.php:43;75;100
+msgid "Invalid creator"
+msgstr "Créateur invalide"
+
+#: Controller/CreatorsController.php:58;79
+msgid "The creator has been saved."
+msgstr "Le créateur a été enregistré "
+
+#: Controller/CreatorsController.php:61;82
+msgid "The creator could not be saved. Please, try again."
+msgstr ""
+"Le créateur n'a pas pu être sauvé . S'il vous plaît, essayez à nouveau ."
+
+#: Controller/CreatorsController.php:104
+msgid "The creator has been deleted."
+msgstr "Le créateur a été supprimé."
+
+#: Controller/CreatorsController.php:106
+msgid "The creator could not be deleted. Please, try again."
+msgstr ""
+"Le créateur n'a pas pu être supprimé . S'il vous plaît, essayez à nouveau ."
+
+#: Controller/FeaturesController.php:38;70;95
+msgid "Invalid feature"
+msgstr "Fonction non valide"
+
+#: Controller/FeaturesController.php:53;74
+msgid "The feature has been saved."
+msgstr "La fonction a été enregistré ."
+
+#: Controller/FeaturesController.php:56;77
+msgid "The feature could not be saved. Please, try again."
+msgstr ""
+"La fonction n'a pas pu être sauvé . S'il vous plaît, essayez à nouveau "
+
+#: Controller/FeaturesController.php:99
+msgid "The feature has been deleted."
+msgstr "La fonction a été supprimée."
+
+#: Controller/FeaturesController.php:101
+msgid "The feature could not be deleted. Please, try again."
+msgstr ""
+"La fonction ne peut pas être supprimé . S'il vous plaît, essayez à nouveau ."
+
+#: Controller/GameFeaturesController.php:38;70;95
+msgid "Invalid game feature"
+msgstr "Fonction de jeu non valide"
+
+#: Controller/GameFeaturesController.php:53;74
+msgid "The game feature has been saved."
+msgstr "La fonction de jeu a été sauvé ."
+
+#: Controller/GameFeaturesController.php:56;77
+msgid "The game feature could not be saved. Please, try again."
+msgstr ""
+"La fonction de jeu n'a pas pu être sauvé . S'il vous plaît, essayez à "
+"nouveau ."
+
+#: Controller/GameFeaturesController.php:99
+msgid "The game feature has been deleted."
+msgstr "La fonction de jeu a été supprimé."
+
+#: Controller/GameFeaturesController.php:101
+msgid "The game feature could not be deleted. Please, try again."
+msgstr ""
+"La fonction de jeu ne peut pas être supprimé . S'il vous plaît, essayez à "
+"nouveau "
+
+#: Controller/GamesController.php:43;78;105
+msgid "Invalid game"
+msgstr "jeu non valide"
+
+#: Controller/GamesController.php:59;82
+msgid "The game has been saved."
+msgstr "Le jeu a été sauvé ."
+
+#: Controller/GamesController.php:62;85
+msgid "The game could not be saved. Please, try again."
+msgstr "Le jeu n'a pas pu être sauvé . S'il vous plaît, essayez à nouveau "
+
+#: Controller/GamesController.php:109
+msgid "The game has been deleted."
+msgstr "Le jeu a été supprimé."
+
+#: Controller/GamesController.php:111
+msgid "The game could not be deleted. Please, try again."
+msgstr ""
+"Le jeu ne peut pas être supprimé . S'il vous plaît, essayez à nouveau ."
+
+#: Controller/UsersController.php:39
+msgid "Invalid username or password, try again"
+msgstr "Nom d'utilisateur ou mot de passe invalide , essayez à nouveau"
+
+#: Controller/UsersController.php:56;89;118
+msgid "Invalid user"
+msgstr "Utilisateur non valide"
+
+#: Controller/UsersController.php:71;93
+msgid "The user has been saved"
+msgstr "L'utilisateur a été enregistré ."
+
+#: Controller/UsersController.php:74;96
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+"L'utilisateur n'a pas pu être sauvé . S'il vous plaît, essayez à nouveau ."
+
+#: Controller/UsersController.php:121
+msgid "User deleted"
+msgstr "Utilisateur a été supprimé"
+
+#: Controller/UsersController.php:124
+msgid "User was not deleted"
+msgstr "L'utilisateur n'a pas été supprimé"
+
+#: Plugin/I18n/Controller/TranslationsController.php:146
+msgid "The translation has been saved"
+msgstr "La traduction a été enregistré"
+
+#: Plugin/I18n/Controller/TranslationsController.php:167;190
+msgid "Translation saved"
+msgstr "Traduction sauvegardé"
+
+#: Plugin/I18n/Controller/TranslationsController.php:210
+msgid "Translation deleted"
+msgstr "Traduction supprimé."
+
+#: Plugin/I18n/Model/Translation.php:112
+msgid "Could not save the translation, please check your inputs."
+msgstr ""
+"Impossible d'enregistrer la traduction , s'il vous plaît vérifier vos entrées"
+
+#: Plugin/I18n/Model/Translation.php:134;171;215;237
+msgid "Invalid Translation"
+msgstr "Traduction non valide"
+
+#: Plugin/I18n/Model/Translation.php:255
+msgid "You need to confirm to delete this Translation"
+msgstr "Vous devez confirmer la suppression de cette traduction"
+
+#: Plugin/I18n/View/Translations/admin_add.ctp:4
+msgid "Admin Add Translation"
+msgstr "Administrateur ajouter une traduction"
+
+#: Plugin/I18n/View/Translations/admin_add.ctp:17
+#: Plugin/I18n/View/Translations/admin_edit.ctp:19
+#: Plugin/I18n/View/Translations/admin_edit_multi.ctp:26
+#: Plugin/I18n/View/Translations/admin_view.ctp:40
+msgid "List Translations"
+msgstr "Liste traductions"
+
+#: Plugin/I18n/View/Translations/admin_delete.ctp:1
+msgid "Delete Translation \"%s\"?"
+msgstr "Supprimer Traduction ?"
+
+#: Plugin/I18n/View/Translations/admin_delete.ctp:3
+msgid ""
+"Be aware that your Translation and all associated data will be deleted if "
+"you confirm!"
+msgstr ""
+"Soyez conscient que votre traduction et toutes les données associées seront "
+"supprimées si vous confirmez !"
+
+#: Plugin/I18n/View/Translations/admin_delete.ctp:11
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: Plugin/I18n/View/Translations/admin_delete.ctp:13
+msgid "You have to confirm."
+msgstr "Vous devez confirmer ."
+
+#: Plugin/I18n/View/Translations/admin_delete.ctp:14
+msgid "Continue"
+msgstr "Continuer"
+
+#: Plugin/I18n/View/Translations/admin_edit.ctp:4
+#: Plugin/I18n/View/Translations/admin_edit_multi.ctp:4
+msgid "Admin Edit Translation"
+msgstr "Modifier Administrateur traduction"
+
+#: Plugin/I18n/View/Translations/admin_edit.ctp:18
+#: Plugin/I18n/View/Translations/admin_index.ctp:70 View/Creators/edit.ctp:16
+#: View/Creators/index.ctp:19 View/Creators/view.ctp:42
+#: View/Features/edit.ctp:18 View/Features/index.ctp:19
+#: View/GameFeatures/edit.ctp:16 View/GameFeatures/index.ctp:21
+#: View/Games/index.ctp:27 View/Users/edit.ctp:18 View/Users/index.ctp:39
+msgid "Delete"
+msgstr "Supprimer"
+
+#: Plugin/I18n/View/Translations/admin_edit_multi.ctp:22
+#: View/Creators/add.ctp:12 View/Creators/edit.ctp:10 View/Features/add.ctp:11
+#: View/Features/edit.ctp:12 View/GameFeatures/add.ctp:9
+#: View/GameFeatures/edit.ctp:10 View/Games/add.ctp:11 View/Games/edit.ctp:12
+#: View/Users/add.ctp:27 View/Users/edit.ctp:12
+msgid "Submit"
+msgstr "Soumettre"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:2
+msgid "Translations"
+msgstr "Traductions"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:6
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:17
+msgid "Locale Name"
+msgstr "Nom locale"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:20
+msgid "Model Name"
+msgstr "Nom du modèle"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:23
+#: Plugin/I18n/View/Translations/admin_view.ctp:24
+msgid "Field"
+msgstr "Domaine"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:26
+#: Plugin/I18n/View/Translations/admin_view.ctp:29
+msgid "Content"
+msgstr "Contenu"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:28
+msgid "Search"
+msgstr "Recherche"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:40 View/Creators/edit.ctp:13
+#: View/Creators/index.ctp:8;34 View/Creators/view.ctp:31
+#: View/Features/add.ctp:14 View/Features/edit.ctp:15
+#: View/Features/index.ctp:8;34 View/GameFeatures/add.ctp:12
+#: View/GameFeatures/edit.ctp:13 View/GameFeatures/index.ctp:9;37
+#: View/GameFeatures/view.ctp:27 View/Games/index.ctp:10;42
+#: View/Users/edit.ctp:15 View/Users/index.ctp:26 View/Users/view.ctp:37
+msgid "Actions"
+msgstr "Actions"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:67 View/Creators/index.ctp:17
+#: View/Creators/view.ctp:40 View/Features/index.ctp:17
+#: View/GameFeatures/index.ctp:19 View/Games/index.ctp:25
+#: View/Users/index.ctp:37
+msgid "View"
+msgstr "Vue"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:68 View/Creators/index.ctp:18
+#: View/Creators/view.ctp:41 View/Features/index.ctp:18
+#: View/GameFeatures/index.ctp:20 View/Games/index.ctp:26
+#: View/Users/index.ctp:38
+msgid "Edit"
+msgstr "Modifier"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:69
+msgid "Edit All locales for this entry"
+msgstr "Modifier tous les paramètres régionaux pour cette entrée"
+
+#: Plugin/I18n/View/Translations/admin_index.ctp:80
+#: Plugin/I18n/View/Translations/admin_view.ctp:41
+msgid "New Translation"
+msgstr "Nouvelle traduction"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:2
+msgid "Translation"
+msgstr "Traduction"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:4 View/GameFeatures/view.ctp:4
+#: View/Users/view.ctp:4
+msgid "Id"
+msgstr "Id"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:9
+msgid "Locale"
+msgstr "Locale"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:14
+msgid "Model"
+msgstr "Model"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:19
+msgid "Foreign Key"
+msgstr "Clé étrangère"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:38
+msgid "Edit Translation"
+msgstr "Modifier la traduction"
+
+#: Plugin/I18n/View/Translations/admin_view.ctp:39
+msgid "Delete Translation"
+msgstr "Supprimer traduction"
+
+#: View/Creators/add.ctp:4
+msgid "Add Creator"
+msgstr "Ajouter Créateur"
+
+#: View/Creators/edit.ctp:4
+msgid "Edit Creator"
+msgstr "Modifier Créateur"
+
+#: View/Creators/edit.ctp:16 View/Creators/index.ctp:19
+#: View/Creators/view.ctp:42 View/Features/edit.ctp:18
+#: View/Features/index.ctp:19 View/GameFeatures/edit.ctp:16
+#: View/GameFeatures/index.ctp:21 View/GameFeatures/view.ctp:30
+#: View/Games/index.ctp:27 View/Users/edit.ctp:18 View/Users/index.ctp:39
+#: View/Users/view.ctp:40
+msgid "Are you sure you want to delete # %s?"
+msgstr "Êtes-vous sûr de vouloir supprimer?"
+
+#: View/Creators/index.ctp:2
+msgid "Creators"
+msgstr "Créateurs"
+
+#: View/Creators/index.ctp:27 View/Features/index.ctp:27
+#: View/GameFeatures/index.ctp:30 View/Games/index.ctp:35
+#: View/Users/index.ctp:48
+msgid "previous"
+msgstr "précédent"
+
+#: View/Creators/index.ctp:29 View/Features/index.ctp:29
+#: View/GameFeatures/index.ctp:32 View/Games/index.ctp:37
+#: View/Users/index.ctp:50
+msgid "next"
+msgstr "suivant"
+
+#: View/Creators/index.ctp:36
+msgid "New Creator"
+msgstr "Nouveau créateur"
+
+#: View/Creators/view.ctp:2 View/Games/view.ctp:4 View/Pages/home.ctp:21
+msgid "Creator"
+msgstr "Créateur"
+
+#: View/Creators/view.ctp:4
+msgid "Details"
+msgstr "Details"
+
+#: View/Creators/view.ctp:9;29 View/Features/view.ctp:13
+#: View/GameFeatures/view.ctp:14 View/Games/view.ctp:19 View/Users/view.ctp:24
+msgid "Created"
+msgstr "Établi"
+
+#: View/Creators/view.ctp:14;30 View/Features/view.ctp:18
+#: View/GameFeatures/view.ctp:19 View/Games/view.ctp:24 View/Users/view.ctp:29
+msgid "Modified"
+msgstr "Modifié"
+
+#: View/Creators/view.ctp:23
+msgid "Related Games"
+msgstr "Jeux similaires"
+
+#: View/Creators/view.ctp:27 View/Games/view.ctp:9
+msgid "Title"
+msgstr "Titre"
+
+#: View/Creators/view.ctp:28 View/Games/view.ctp:14
+msgid "Discription"
+msgstr "Description"
+
+#: View/Features/add.ctp:4
+msgid "Add Feature"
+msgstr "Ajouter un caractéristique"
+
+#: View/Features/add.ctp:17
+msgid "List Features"
+msgstr "Liste des caractéristiques"
+
+#: View/Features/edit.ctp:4
+msgid "Edit Feature"
+msgstr "Liste des caractéristiques"
+
+#: View/Features/index.ctp:2 View/Pages/home.ctp:22
+msgid "Features"
+msgstr "Caractéristiques"
+
+#: View/Features/index.ctp:36
+msgid "New Feature"
+msgstr "Nouvelle caractéristique"
+
+#: View/Features/view.ctp:2
+msgid "Feature"
+msgstr "Caractéristique"
+
+#: View/Features/view.ctp:4
+msgid "Type"
+msgstr "Type"
+
+#: View/Features/view.ctp:9
+msgid "Feature Name"
+msgstr "Nom de la fonctionnalité"
+
+#: View/GameFeatures/add.ctp:4
+msgid "Add Game Feature"
+msgstr "Ajouter Game Feature"
+
+#: View/GameFeatures/add.ctp:15 View/GameFeatures/edit.ctp:17
+#: View/GameFeatures/view.ctp:31
+msgid "List Game Features"
+msgstr "Liste Game Features"
+
+#: View/GameFeatures/edit.ctp:4 View/GameFeatures/view.ctp:29
+msgid "Edit Game Feature"
+msgstr "Modifier  Game Feature"
+
+#: View/GameFeatures/index.ctp:2
+msgid "Game Features"
+msgstr "Game Features"
+
+#: View/GameFeatures/index.ctp:39 View/GameFeatures/view.ctp:32
+msgid "New Game Feature"
+msgstr "Nouveau Game Feature"
+
+#: View/GameFeatures/view.ctp:2
+msgid "Game Feature"
+msgstr "Game Feature"
+
+#: View/GameFeatures/view.ctp:9 View/Users/view.ctp:9
+msgid "Name"
+msgstr "Nom"
+
+#: View/GameFeatures/view.ctp:30
+msgid "Delete Game Feature"
+msgstr "Supprimer Game Feature"
+
+#: View/Games/add.ctp:4
+msgid "Add Game"
+msgstr "Ajouter un jeu"
+
+#: View/Games/edit.ctp:4
+msgid "Edit Game"
+msgstr "Modifier jeu"
+
+#: View/Games/index.ctp:2
+msgid "Games List"
+msgstr "Liste des Jeux"
+
+#: View/Games/index.ctp:44 View/Users/index.ctp:7
+msgid "New Game"
+msgstr "Nouveau jeu"
+
+#: View/Games/view.ctp:2
+msgid "Game"
+msgstr "Jeu"
+
+#: View/Pages/home.ctp:14
+msgid "Welcome to Games Features."
+msgstr "Bienvenue à Games Features."
+
+#: View/Pages/home.ctp:20
+msgid "Games"
+msgstr "Jeux"
+
+#: View/Pages/home.ctp:23
+msgid "Games Features"
+msgstr "Games Features"
+
+#: View/Pages/home.ctp:24 View/Users/view.ctp:2
+msgid "User"
+msgstr "Utilisateur"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:13
+msgid "Register"
+msgstr "S'inscrire"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:22
+msgid "Language"
+msgstr "Langue"
+
+#: View/Users/add.ctp:5 View/Users/index.ctp:5
+msgid "User list"
+msgstr "Liste des utilisateurs"
+
+#: View/Users/add.ctp:6 View/Users/index.ctp:6
+msgid "Game list"
+msgstr "Liste des jeux"
+
+#: View/Users/add.ctp:7
+msgid "Creator list"
+msgstr "Liste des créateurs"
+
+#: View/Users/add.ctp:8 View/Users/index.ctp:8
+msgid "Feature list"
+msgstr "Liste des fonctionnalités"
+
+#: View/Users/add.ctp:9
+msgid "Game feature list"
+msgstr "Game feature liste"
+
+#: View/Users/add.ctp:20
+msgid "Register an account"
+msgstr "Créer un compte"
+
+#: View/Users/edit.ctp:4 View/Users/view.ctp:39
+msgid "Edit User"
+msgstr "Modifier l'utilisateur"
+
+#: View/Users/edit.ctp:19 View/Users/view.ctp:41
+msgid "List Users"
+msgstr "Liste des utilisateurs"
+
+#: View/Users/index.ctp:9
+msgid "New feature"
+msgstr "Nouvelle fonctionnalité"
+
+#: View/Users/index.ctp:17
+msgid "User List"
+msgstr "Liste des utilisateurs"
+
+#: View/Users/login.ctp:6
+msgid "Log in"
+msgstr "Connexion"
+
+#: View/Users/login.ctp:15
+msgid "Please enter your username and password"
+msgstr "S'il vous plaît entrer votre nom d'utilisateur et mot de passe"
+
+#: View/Users/view.ctp:14
+msgid "Password"
+msgstr "Mot de passe"
+
+#: View/Users/view.ctp:19
+msgid "Email"
+msgstr "Courriel"
+
+#: View/Users/view.ctp:40
+msgid "Delete User"
+msgstr "Supprimer un utilisateur"
+
+#: View/Users/view.ctp:42
+msgid "New User"
+msgstr "Nouvel utilisateur"
+
+#: Model/Creator.php:validation for field creator_name;validation details
+#: Model/Feature.php:validation type;validation feature_name
+#: Model/Game.php:validation title;validation discription
+#: Model/GameFeature.php:validation name Model/User.php:validation
+#: username;validation password;validation role
+msgid "notEmpty"
+msgstr "notEmpty"
+
+#: Model/Game.php:validation for field creator_id;validation
+#: feature_id;validation user_id Model/GameFeature.php:validation
+#: game_id;validation feature_id
+msgid "numeric"
+msgstr "numeric"
+
+#: Model/User.php:validation for field email
+msgid "email"
+msgstr "courriel"
+
+#: Plugin/I18n/Model/Translation.php:validation for field locale
+msgid "Please enter a Locale"
+msgstr "S'il vous plaît entrer une Locale"
+
+#: Plugin/I18n/Model/Translation.php:validation for field model
+msgid "Please enter a Model"
+msgstr "S'il vous plaît entrer un modèle"
+
+#: Plugin/I18n/Model/Translation.php:validation for field foreign_key
+msgid "Please enter a Foreign Key"
+msgstr "S'il vous plaît entrer une clé étrangère"
+
+#: Plugin/I18n/Model/Translation.php:validation for field
+msgid "Please enter a Field"
+msgstr "S'il vous plaît entrer un champ"
