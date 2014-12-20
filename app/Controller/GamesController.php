@@ -27,13 +27,7 @@ class GamesController extends AppController {
 		$this->Game->recursive = 0;
 		$this->set('games', $this->paginate());
 	
-	 if ($this->request->is('ajax')) {
-        $term = $this->request->query('term');
-		$games = $this->Game->find('list');
-        $gameNames = $this->Game->getGameGameNames($term);
-        $this->set(compact('gameNames','games'));
-        $this->set('_serialize', 'gameNames');
-      }
+
 	}
 
 /**
@@ -74,6 +68,7 @@ class GamesController extends AppController {
 				$this->Session->setFlash(__('The game could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
+		
 		$creators = $this->Game->Creator->find('list');
 		
 		$features = $this->Game->Feature->find('list');
@@ -107,14 +102,15 @@ class GamesController extends AppController {
  */
 	public function edit($id = null) {
 	
-	 if ($this->request->is('ajax')) {
+	
+
+		 if ($this->request->is('ajax')) {
         $term = $this->request->query('term');
-		$games = $this->Game->find('list');
         $gameNames = $this->Game->getGameGameNames($term);
-        $this->set(compact('gameNames','games'));
+        $this->set(compact('gameNames'));
         $this->set('_serialize', 'gameNames');
-      }
 		
+		}
 
         $this->Game->id = $id;
 		if (!$this->Game->exists($id)) {

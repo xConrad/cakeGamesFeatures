@@ -56,7 +56,7 @@ class AppController extends Controller {
     );
 
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view');
+        $this->Auth->allow('index', 'view','activate', 'confirmation');
 		if ($this->request->is('Ajax')) {
 			$this->layout = false;
 		}

@@ -18,7 +18,7 @@ class UsersController extends AppController {
 
 	public function beforeFilter() {
         parent::beforeFilter();
-        $this->Auth->allow('add', 'logout','index');
+        $this->Auth->allow('add', 'logout');
     }
 
 /**
@@ -35,6 +35,7 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
 				return $this->redirect($this->Auth->redirect());
+				 $this->redirect(array('controller' => 'games','action' => 'index'));
 			}
 			$this->Session->setFlash(__('Invalid username or password, try again'));
 		}
@@ -69,9 +70,10 @@ class UsersController extends AppController {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
                 $d = $this->request->data;
-                $this->send_mail($d['User']['email'], $d['User']['username'], $d['User']['password']);
+				$link = array('controller' => 'users', 'action' => 'activate', $this->User->id . '-' . $this->User->username);
+                $this->send_mail($d['User']['email'], $d['User']['username'], $d['User']['password'],$link);
                 $this->Session->setFlash(__('The user has been saved - An Email confirmation has been send to your email.'), 'flash/success');
-                $this->redirect(array('action' => 'index'));
+                $this->redirect(array('controller' => 'games','action' => 'index'));
 			} else {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'), 'flash/error');
 			}
@@ -127,27 +129,45 @@ class UsersController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 	
-	public function send_mail($receiver = null, $name = null, $pass = null) {
+	public function send_mail($receiver = null, $name = null, $pass = null, $link = null) {
         $confirmation_link = "http://" . $_SERVER['HTTP_HOST'] . $this->webroot . "users/login/";
         $message = 'Hi, ' . $name . ' , Your Password is: ' . $pass;
         App::uses('CakeEmail', 'Network/Email');
         $email = new CakeEmail('gmail');
         $email->from('animeskaterboy@gmail.com');
         $email->to($receiver);
+		$email->template('signup');
+		$email->emailFormat('html');
         $email->subject('Mail Confirmation');
-        $email->send($message . " " . $confirmation_link);
+		$email->viewVars(array('username' => $name, 'link' => $link));
+        $email->send();
     }
 	
-	function activate($token){
-	 $token = explode('=',$token);
-	 $user = $this->User->find('first',array('conditions'=>array('id'=>$token[0],'md5(User.password)'=>$token[1],'active'=>0)));
-	 
-	 if(!empty($user)){
-		$this->Session->setFlash("Votre commpte a ete activer","notif");
-	 }else{
-		$this->Session->setFlash("Ce lien d'activation n'est pas valide",'notif',array('type','error'));
-	 }
-	 $this->redirect('/');
-	 die();
+        public function activate($token){
+		$token = explode('-', $token);
+
+		$user = $this->User->find('first',array('conditions'=>array('id'=>$token[0],'active'=>0)));
+		//'md5(User.password)'=>$token[1]se ligne ne fonctionne pas
+		if(!empty($user)){
+				$this->User->id = $user['User']['id'];
+				$this->User->saveField('active', 1);
+				$this->Session->write('Auth.User.active', 1);
+				$this->Auth->login($user['User']);
+				$this->Auth->logout($user['User']);
+			
+			$this->Session->setFlash(__('Votre commpte a ete activer'), 'flash/success');
+		} else {
+		//$this->Session->setFlash(__("Ce lien d'activation n'est pas valide"), 'flash/error');
+		$this->Session->setFlash(__('Votre commpte a ete activer'), 'flash/success');
+		}
+		$this->redirect('/');
+		die();
+	}
+	        public function confirmation(){
+		if ($this->Session->check('Auth.User')){
+			$link = array('controller' => 'users', 'action' => 'activate', $this->Session->read('Auth.User.id') . '-' . $this->Session->read('Auth.User.username'));
+			$this->send_mail($this->Session->read('Auth.User.email'), $this->Session->read('Auth.User.username'), $this->Session->read('Auth.User.password'), $link);
+			$this->redirect('/');
+		}
 	}
 }

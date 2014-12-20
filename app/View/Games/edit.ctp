@@ -22,7 +22,6 @@
 
 		<h2><?php echo __('Edit Game'); ?></h2>
 
-		<div class="games form">
 		
 		<?php $uid = $this->Session->read('Auth.User.id'); ?>
 		
@@ -30,11 +29,15 @@
 
 				<fieldset>
 
+			<div class="form-group">
+
+			  
+					
 					<div class="form-group">
-						<?php echo $this->Form->input('id', array('class' => 'form-control')); ?>
+						<?php echo $this->Form->input('creator_id', array('class' => 'form-control')); ?>
 					</div><!-- .form-group -->
-					<div class="form-group">
-					<?php echo $this->Form->input('creator_id', array('class' => 'form-control')); ?>
+					
+					
 					</div><!-- .form-group -->
 					<div class="form-group">
 						<?php echo $this->Form->input('feature_id', array('class' => 'form-control')); ?>
@@ -53,7 +56,6 @@
 					  echo $this->Form->input('title', array('class' => 'ui-autocomplete',
 								   'id' => 'GameTitle','class' => 'form-control'));
 					  echo $this->Form->end();?>
-					
 					
 					
 					
@@ -82,6 +84,7 @@
 					</div><!-- .form-group -->
 
 					<?php echo $this->Form->submit('Submit', array('class' => 'btn btn-large btn-primary')); ?>
+					</div><!-- .form-group -->
 
 				</fieldset>
 

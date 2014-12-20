@@ -33,7 +33,7 @@
 
 				<fieldset>
 				
-					
+
 			  <?php
 			  $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array('inline' => false));
 			  $this->Html->script('https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array('inline' => false));
@@ -42,14 +42,15 @@
 			   
 			  
 			  ?>
-					
+
+					<div class="form-group">
 										<div class="form-group">
 						<?php echo $this->Form->input('creator_id', array('class' => 'form-control')); ?>
 					</div><!-- .form-group -->
-					
 					<div class="form-group">
 						<?php echo $this->Form->input('feature_id', array('class' => 'form-control')); ?>
 					</div><!-- .form-group -->
+					<div class="form-group">
 						<div class="form-group">
 						<?php			  
 						echo $this->Form->input('title', array('class' => 'ui-autocomplete',
